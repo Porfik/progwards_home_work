@@ -41,8 +41,4 @@ public class CalcTime {
         MurmanskToAlmata();
         printTime();
     }
-
-    public static void main(String[] args){
-        printTimes();
-    }
 }
