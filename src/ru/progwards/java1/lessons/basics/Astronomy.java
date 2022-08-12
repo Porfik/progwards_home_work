@@ -12,19 +12,19 @@ public class Astronomy {
     public static Double earthSquare() {
         return sphereSquare(6371.2);
     }
-    public static Double mercurySquare(){
+    public static Double mercurySquare() {
         return sphereSquare( 2439.7);
     }
-    public static Double jupiterSquare(){
+    public static Double jupiterSquare() {
         return sphereSquare(71492.0);
     }
 
-    public static Double earthVsMercury(){
+    public static Double earthVsMercury() {
         double earth = earthSquare(), mercury = mercurySquare();
 
         return earth / mercury;
     }
-    public static Double earthVsJupiter(){
+    public static Double earthVsJupiter() {
         double earth = earthSquare(), jupiter = jupiterSquare();
 
         return earth / jupiter;

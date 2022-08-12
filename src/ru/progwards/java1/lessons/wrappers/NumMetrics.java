@@ -23,4 +23,41 @@ public class NumMetrics {
 
         return result;
     }
+
+    public static void sumDigitsTestFn(int inputVal, int correctVal) {
+        int outputVal = sumDigits(inputVal);
+
+        if (outputVal == correctVal) {
+            System.out.println("Test with value " + inputVal + " passed.");
+        }
+        else {
+            System.out.println("Error, test with value " + inputVal + " failed. The output value of function " + outputVal + ".");
+        }
+    }
+    public static void mulDigitsTestFn(int inputVal, int correctVal) {
+        int outputVal = mulDigits(inputVal);
+
+        if (outputVal == correctVal) {
+            System.out.println("Test with value " + inputVal + " passed.");
+        }
+        else {
+            System.out.println("Error, test with value " + inputVal + " failed. The output value of function " + outputVal + ".");
+        }
+    }
+
+    public static void main(String[] args) {
+        sumDigitsTestFn(123, 6);
+        sumDigitsTestFn(682, 16);
+        sumDigitsTestFn(937, 19);
+        //Функции ниже нужны для проверки функции тестирования
+        sumDigitsTestFn(9371, 20);
+        sumDigitsTestFn(602, 16);
+
+        mulDigitsTestFn(123, 6);
+        mulDigitsTestFn(413, 12);
+        mulDigitsTestFn(846, 192);
+        //Функции ниже нужны для проверки функции тестирования
+        mulDigitsTestFn(8461, 192);
+        mulDigitsTestFn(423, 12);
+    }
 }
