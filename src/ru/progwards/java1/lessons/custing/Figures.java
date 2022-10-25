@@ -10,7 +10,7 @@ public class Figures {
         return n * n;
     }
     public static Double triangle(double k) {
-        return (k * k + Math.sqrt(3)) / 4;
+        return (k * k * Math.sqrt(3)) / 4;
     }
     public static double squareVsTraiange(double p) {
         return square(p) / triangle(p);
